@@ -6,8 +6,16 @@
   Last Worked On: 11/16/26
 */
 
+#include <type_traits>
+
 template <typename object>
-void isValid()
+bool isValid(const char* input,const vector<object*> &valid, object* &output){
+  if(is_same_v<object,char>){
+    // check if char arrays are the same
+  } else {
+    // check if object.name == input
+  }
+}
 
 // function to get two word commands
 // take in 2 carrays and vector of command pointers commands
